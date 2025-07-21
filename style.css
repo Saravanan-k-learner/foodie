@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #ff6f61;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+.menu {
+    padding: 20px;
+    text-align: center;
+}
+.food-item {
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background: white;
+}
