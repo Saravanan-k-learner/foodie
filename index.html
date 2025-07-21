@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FoodExpress - Order Your Meal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>FoodExpress</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="menu">
+        <h2>Our Menu</h2>
+        <div class="food-item">
+            <img src="https://via.placeholder.com/150" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>$12</p>
+            <button onclick="order('Pizza')">Order Now</button>
+        </div>
+        <div class="food-item">
+            <img src="https://via.placeholder.com/150" alt="Burger">
+            <h3>Burger</h3>
+            <p>$8</p>
+            <button onclick="order('Burger')">Order Now</button>
+        </div>
+    </section>
+
+    <form id="orderForm" method="POST" action="order.php" style="display:none;">
+        <input type="hidden" name="item" id="orderItem">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
